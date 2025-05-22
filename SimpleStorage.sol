@@ -12,19 +12,23 @@ contract SimpleStorage {
     // Person public pat = Person({myFavNum: 7, name: "Pat"});
     // Person public Sett = Person({myFavNum: 12, name: "Sett"});
     // Person public Jan = Person({myFavNum: 21, name: "Jan"});
+
     // dynamic array
     Person[] public friends;
     //static array
     // Person[3] public friends;
 
+    mapping (string => uint256) public nameToFavoriteNumber;
+
     function addPerson(string memory _name, uint256 _favNum) public {
         friends.push( Person(_favNum, _name) );
+        nameToFavoriteNumber[_name] = _favNum;
+
     }
     // function store(uint256 _favNum) public {
     //    favNum = _favNum;
     // }
-
-    
+    //key
     // function retrieve() public view returns (uint256) {
     //     return favNum;
     // }

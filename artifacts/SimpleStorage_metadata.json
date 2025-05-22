@@ -46,6 +46,25 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavoriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -76,11 +95,11 @@
 	},
 	"sources": {
 		"SimpleStorage.sol": {
-			"keccak256": "0xfb2978d5e2935be6cf3ac0fa1c140b0c791029b7eeecf443c4f82ec7a89cdea3",
+			"keccak256": "0x564b2d6ce88ff0c9a3e70ca927107e499230795af7bb9da57c8243be2e564bce",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://36db6d4576c139ad218c422634587f5c6526f697dc63d4e83333808fabcf3071",
-				"dweb:/ipfs/QmPyaKxmNt29s6VgS8ac57TwhRVVSr5ZMPfHa6HapzpRWE"
+				"bzz-raw://460b1b059945be0332aaea489e90f4630c8ad45dadbe1e8366e2dac1d7613aea",
+				"dweb:/ipfs/QmRyimHHaJoggL29keFXHvxmUHsnevgPSY2fwgueqzLGQ7"
 			]
 		}
 	},
