@@ -106,7 +106,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"SimpleStorage.sol": "SimpleStorage"
+			"AddFiveStorage.sol": "AddFiveStorage"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -120,6 +120,14 @@
 		"remappings": []
 	},
 	"sources": {
+		"AddFiveStorage.sol": {
+			"keccak256": "0x3aa3ef81bede4fe8591e6721bc036150a96b695f5994a0b6470e38a79b106ab0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3ccc2f0a6bb77fefd50a5727aec45d011201fd5545d0a89d319f56ae45db975c",
+				"dweb:/ipfs/QmWNTfBzzQ5Uc2mNWZ9Lg4EfnUUx9cVDsd9PJ3zB4ukuzs"
+			]
+		},
 		"SimpleStorage.sol": {
 			"keccak256": "0xaa08671d794d39847baee09b9185d81732b4ffd03aa60f20dbb421816b10542b",
 			"license": "MIT",

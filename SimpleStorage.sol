@@ -1,39 +1,34 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.26; // this is the solidity version
+pragma solidity ^0.8.19;
 
 contract SimpleStorage {
-    uint256 favNum;
-    // uint256[] list_of_favorite_numbers =[0, 78, 90];
+    uint256 myFavoriteNumber;
+
     struct Person {
-        uint256 myFavNum;
+        uint256 favoriteNumber;
         string name;
     }
+    // uint256[] public anArray;
+    Person[] public listOfPeople;
 
-    // Person public pat = Person({myFavNum: 7, name: "Pat"});
-    // Person public Sett = Person({myFavNum: 12, name: "Sett"});
-    // Person public Jan = Person({myFavNum: 21, name: "Jan"});
+    mapping(string => uint256) public nameToFavoriteNumber;
 
-    // dynamic array
-    Person[] public friends;
-    //static array
-    // Person[3] public friends;
-
-    mapping (string => uint256) public nameToFavoriteNumber;
-
-    function addPerson(string memory _name, uint256 _favNum) public {
-        friends.push( Person(_favNum, _name) );
-        nameToFavoriteNumber[_name] = _favNum;
-
+    function store(uint256 _favoriteNumber) public virtual {
+        myFavoriteNumber = _favoriteNumber;
     }
-    // function store(uint256 _favNum) public {
-    //    favNum = _favNum;
-    // }
-    //key
-    // function retrieve() public view returns (uint256) {
-    //     return favNum;
-    // }
+
+    function retrieve() public view returns (uint256) {
+        return myFavoriteNumber;
+    }
+
+    function addPerson(string memory _name, uint256 _favoriteNumber) public {
+        listOfPeople.push(Person(_favoriteNumber, _name));
+        nameToFavoriteNumber[_name] = _favoriteNumber;
+    }
 }
-// view, pure
 
-// 0xd9145CCE52D386f254917e481eB44e9943F39138
+contract SimpleStorage2 {}
 
+contract SimpleStorage3 {}
+
+contract SimpleStorage4 {}
